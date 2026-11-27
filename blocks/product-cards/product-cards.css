@@ -4,6 +4,10 @@
   gap: 24px;
 }
 
+.product-cards-wrapper + .product-cards-wrapper {
+  margin-top: 40px;
+}
+
 .product-card {
   padding: 24px;
   background: #f5f5f5;
@@ -20,6 +24,28 @@
   font-size: 16px;
   color: #555;
 }
+
+main .section.light {
+  background-color: #e4c2bf;
+}
+
+.product-cards.featured {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-cards.featured .product-card {
+  padding: 40px;
+}
+
+.product-cards.compact {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.product-cards.compact .product-card {
+  padding: 12px;
+}
+
 
 @media (width < 900px) {
   .product-cards {
